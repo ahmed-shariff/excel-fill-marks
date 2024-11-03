@@ -4,6 +4,7 @@ import sys
 
 
 def _main():
+    easygui.msgbox("Strat by selecting the excel file")
     file_name = easygui.fileopenbox(msg="Select file", title="Marking file selection", filetypes="*.xlsx")
     # file_name = "C:/Users/amsha/Projects/excel-fill-marks/GROUP NO_ELA2204 FINAL MARKS_IN CHARGE.xlsx"
     workbook = openpyxl.load_workbook(file_name)
