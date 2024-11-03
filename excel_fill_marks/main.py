@@ -82,9 +82,9 @@ def _main():
                         break
                     except ValueError:
                         error_msg = f"Invalid marks (got {_mark})\n\n"
-                        continue
+                        break
             else:
-                error_msg = f"Invalid reg number (got {_reg_num})"
+                error_msg = f"Invalid reg number (got {_reg_num})\n\n"
         else:
             maybe_close = True
 
